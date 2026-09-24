@@ -2969,6 +2969,25 @@ body.site-live .top{
     backdrop-filter:none!important;
   }
 }
+
+/* Deployment safety: core content must never depend on an animation controller. */
+.hero .reveal-piece,
+.v63-reveal,
+.v63-title,
+.v65-inner,
+.v65-head,
+.v68-piece,
+.v68-section-piece,
+.v69-content-piece,
+.v69-text-piece,
+.reviews-minimal > div,
+.reviews-minimal > a{
+  opacity:1!important;
+  visibility:visible!important;
+  transform:none!important;
+  filter:none!important;
+  clip-path:none!important;
+}
 </style>
 
 <script id="ANARHY-V91-BOOT">
